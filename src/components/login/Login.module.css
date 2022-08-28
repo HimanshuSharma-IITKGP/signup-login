@@ -1,0 +1,43 @@
+.form {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  /* height: 70vh; */
+  padding-block: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 60%;
+  font-size: 1.25rem;
+}
+
+.form-control label {
+  padding: 0.5rem
+}
+
+.form-control input {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  border: none;
+  background-color: aquamarine;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.submitBtn:disabled {
+  background-color: rgb(4, 79, 54);
+  cursor: not-allowed;
+  color: white
+}
