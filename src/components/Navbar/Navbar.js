@@ -8,12 +8,13 @@ import { useHistory } from "react-router-dom";
 
 const Navbar = (props) => {
   const userInfo = useSelector((state)=> state.user);
-  console.log(userInfo)
+  // console.log(userInfo)
   const dispatchUser = useDispatch()
   const history = useHistory();
 
   const logoutHandler = () => {
-    dispatchUser(userActions.logout())
+    dispatchUser(userActions.logout());
+    localStorage.setItem("KTJ_Authentication_token", '');
     history.replace('/')
   }
 

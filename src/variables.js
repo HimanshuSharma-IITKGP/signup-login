@@ -1,0 +1,1 @@
+export const localStorageName = "KTJ_Authentication_token";
